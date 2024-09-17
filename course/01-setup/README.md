@@ -98,19 +98,19 @@ os.environ['https_proxy'] = "socks5://ilgn01:12345"
 
 3. SSHPROXY (模式二, 於計算節點連線至登入節點ilgn01啟動)
 ```bash!
-nodehostname=$(hostname -s)
-ssh -D ${nodehostname}:12345 ilgn01
+ssh -D $(hostname -s):12345 ilgn01
 ```
 4. 環境變數
 ```bash
-export http_proxy="socks5://${nodehostname}:12345"
-echo export https_proxy="socks5://${nodehostname}:12345"
+export http_proxy="socks5://$(hostname -s):12345"
+echo export https_proxy="socks5://$(hostname -s):12345"
 ```
 ```python!
-# 忘了怎麼表示, 請自行取代 {nodehostname} 為你計算節點的 hostname
 import os
-os.environ['http_proxy'] = "socks5://{nodehostname}:12345" 
-os.environ['https_proxy'] = "socks5://{nodehostname}:12345" 
+tmp=!echo $(hostname)
+HOSTNAME=tmp[0]
+os.environ['http_proxy'] = "socks5:/"+HOSTNAME+":12345" 
+os.environ['https_proxy'] = "socks5://"+HOSTNAME+":12345" 
 ```
 
 ### singularity image ipykernel (Image內建python)
