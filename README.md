@@ -4,7 +4,7 @@
 ```
 ssh -D ${HOSTNAME}:12345 ilgn01
 ```
-## Vash 環境變數
+## Bash 環境變數
 ```
 export http_proxy="socks5://${HOSTNAME}:12345"
 export https_proxy="socks5://${HOSTNAME}:12345"
