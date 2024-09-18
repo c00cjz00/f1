@@ -24,3 +24,10 @@ curl https://www.google.com| iconv -f iso8859-1 -t utf-8 > index.html
 cd ~/
 git clone https://github.com/c00cjz00/f1.git
 ```
+
+## 下載 Singularity image
+- https://biocontainers.biobank.org.tw/singularity_images.php
+```
+mkdir -p /work1/$(whoami)/docker/
+wget --no-check-certificate https://depot.galaxyproject.org/singularity/picrust2%3A2.5.3--pyhdfd78af_0  -O /work1/$(whoami)/docker/picrust-2.5.3.sif
+```
