@@ -37,11 +37,11 @@ f1-intgpn01.nchc.org.tw
 
 - **特殊工作節點操作流程**
 https://f1-stn01.nchc.org.tw/ or https://f1-stn02.nchc.org.tw/
-(1)Application – Code Server
+1. Application – Code Server
 https://f1-stn02.nchc.org.tw/pun/sys/dashboard
-(2)Application – Jupyter Lab
+2.Application – Jupyter Lab
 https://f1-stn02.nchc.org.tw/pun/sys/dashboard
-(3)Application – Job Composer
+3. Application – Job Composer
 https://f1-stn02.nchc.org.tw/pun/sys/dashboard/apps/show/myjobs
 工作範例: 
 ```bash
