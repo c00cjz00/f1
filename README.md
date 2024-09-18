@@ -51,3 +51,6 @@ f1/course/01-setup/03-singularity_nonepython_ipykernel.ipynb
 ## Qiime2 範例操作
 f1/course/02-qiime2/demo01.ipynb
 
+##  教學文件
+- 人體微生物相資料平台教學-大綱 https://hackmd.io/9tAeQiL5QEW9QI_iL8PO8w
+- F1教學 https://github.com/c00cjz00/f1/tree/main/course/01-setup
