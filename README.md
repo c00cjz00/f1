@@ -24,11 +24,27 @@ curl https://www.google.com| iconv -f iso8859-1 -t utf-8 > index.html
 cd ~/
 git clone https://github.com/c00cjz00/f1.git
 ```
-
 ## 下載 Singularity image
+- https://docs.qiime2.org/2024.5/install/virtual/docker/
+```
+mkdir -p /work1/$(whoami)/docker/
+cd /work1/$(whoami)/docker/
+singularity pull docker://quay.io/qiime2/amplicon:2024.5
+singularity pull docker://quay.io/qiime2/metagenome:2024.5
+singularity pull docker://quay.io/qiime2/tiny:2024.5
+```
+## 下載 Biocontainer image
 - https://biocontainers.biobank.org.tw/singularity_images.php
 ```
 mkdir -p /work1/$(whoami)/docker/
-wget --no-check-certificate https://depot.galaxyproject.org/singularity/picrust2%3A2.5.3--pyhdfd78af_0  -O /work1/$(whoami)/docker/picrust-2.5.3.sif
-wget --no-check-certificate https://depot.galaxyproject.org/singularity/humann%3A3.9--py312hdfd78af_0 -O /work1/$(whoami)/docker/humann-3.9.sif
+cd /work1/$(whoami)/docker/
+wget --no-check-certificate https://depot.galaxyproject.org/singularity/picrust2%3A2.5.3--pyhdfd78af_0  -O picrust-2.5.3.sif
+wget --no-check-certificate https://depot.galaxyproject.org/singularity/humann%3A3.9--py312hdfd78af_0 -O humann-3.9.sif
+```
+## 建立環境套件
+```
+# qiime2
+f1/course/01-setup/02-singularity_pythonbase_ipykernel.ipynb
+# humann
+f1/course/01-setup/03-singularity_nonepython_ipykernel.ipynb
 ```
