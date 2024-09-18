@@ -48,3 +48,6 @@ f1/course/01-setup/02-singularity_pythonbase_ipykernel.ipynb
 # humann
 f1/course/01-setup/03-singularity_nonepython_ipykernel.ipynb
 ```
+## Qiime2 範例操作
+f1/course/02-qiime2/demo01.ipynb
+
