@@ -30,4 +30,5 @@ git clone https://github.com/c00cjz00/f1.git
 ```
 mkdir -p /work1/$(whoami)/docker/
 wget --no-check-certificate https://depot.galaxyproject.org/singularity/picrust2%3A2.5.3--pyhdfd78af_0  -O /work1/$(whoami)/docker/picrust-2.5.3.sif
+wget --no-check-certificate https://depot.galaxyproject.org/singularity/humann%3A3.9--py312hdfd78af_0 -O /work1/$(whoami)/docker/humann-3.9.sif
 ```
