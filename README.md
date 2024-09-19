@@ -15,6 +15,14 @@ ssh -D ${HOSTNAME}:12345 ilgn01
 export http_proxy="socks5://${HOSTNAME}:12345"
 export https_proxy="socks5://${HOSTNAME}:12345"
 ```
+## Python 環境變數
+```
+import os
+tmp=!echo $(hostname)
+HOSTNAME=tmp[0]
+os.environ['http_proxy'] = "socks5:/"+HOSTNAME+":12345" 
+os.environ['https_proxy'] = "socks5://"+HOSTNAME+":12345" 
+```
 ## 連線測試
 ```
 curl https://www.google.com| iconv -f iso8859-1 -t utf-8 > index.html
