@@ -38,9 +38,10 @@ ml tools/miniconda3
 #conda env remove -n nvflare
 conda create -n nvflare python=3.10 -y
 conda activate nvflare
+conda install pysocks
 python -m pip install --upgrade pip
 pip install nvflare
-pip install ipykernel pysocks
+pip install ipykernel
 python -m ipykernel install --name nvflare --user
 #pip install -r requirements nvflare
 conda deactivate
