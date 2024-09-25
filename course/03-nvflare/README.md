@@ -10,8 +10,8 @@
 ```
 ssh -D ${HOSTNAME}:12345 ilgn01
 ssh -fND ${HOSTNAME}:12345 ilgn01
-ssh -D ${HOSTNAME}:12345 ilgn01
-ssh -fND ${HOSTNAME}:12345 ilgn01
+ssh -D ${HOSTNAME}:12345 intgpn01
+ssh -fND ${HOSTNAME}:12345 intgpn01
 ```
 ## Bash 環境變數 (12345請同步更動為上述的隨機數字)
 ```
