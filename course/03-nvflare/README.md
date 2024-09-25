@@ -57,6 +57,10 @@ ml tools/miniconda3
 conda activate nvflare
 ```
 
+## 啟動jupyter notebook
+```
+f1/course/03-nvflare/nvflare_demo.ipynb
+```
 ## 初始環境設定
 ```python
 import os
