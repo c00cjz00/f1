@@ -6,11 +6,14 @@
 - https://f1-stn02.nchc.org.tw/
 ## 啟動 Notebook
 - https://f1-stn02.nchc.org.tw/pun/sys/dashboard
-## SSHPROXY, 開啟終端機, 執行以下連線
+## SSHPROXY, 開啟終端機, 執行以下其中一項連線 (請修改12345為一大於10000的隨機數字) 
 ```
 ssh -D ${HOSTNAME}:12345 ilgn01
+ssh -fND ${HOSTNAME}:12345 ilgn01
+ssh -D ${HOSTNAME}:12345 ilgn01
+ssh -fND ${HOSTNAME}:12345 ilgn01
 ```
-## Bash 環境變數
+## Bash 環境變數 (12345請同步更動為上述的隨機數字)
 ```
 export http_proxy="socks5://${HOSTNAME}:12345"
 export https_proxy="socks5://${HOSTNAME}:12345"
