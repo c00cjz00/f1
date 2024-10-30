@@ -40,9 +40,9 @@ git clone https://github.com/c00cjz00/f1.git
 ```
 mkdir -p /work1/$(whoami)/docker/
 cd /work1/$(whoami)/docker/
-singularity pull docker://quay.io/qiime2/amplicon:2024.5
-singularity pull docker://quay.io/qiime2/metagenome:2024.5
-singularity pull docker://quay.io/qiime2/tiny:2024.5
+singularity pull docker://quay.io/qiime2/amplicon:2024.10
+singularity pull docker://quay.io/qiime2/metagenome:2024.10
+singularity pull docker://quay.io/qiime2/tiny:2024.10
 ```
 ## 下載 Biocontainer image
 - https://biocontainers.biobank.org.tw/singularity_images.php
