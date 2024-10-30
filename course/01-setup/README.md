@@ -97,14 +97,14 @@ os.environ['http_proxy'] = "socks5://ilgn01:12345"
 os.environ['https_proxy'] = "socks5://ilgn01:12345" 
 ```
 
-3. SSHPROXY (模式二, 於計算節點連線至登入節點ilgn01啟動)
+3. SSHPROXY (模式二, 於計算節點連線至登入節點intgpn01啟動)
 ```bash!
-ssh -D $(hostname -s):12345 ilgn01
+ssh -fND ${HOSTNAME}:12345 intgpn01
 ```
 4. 環境變數
 ```bash
-export http_proxy="socks5://$(hostname -s):12345"
-echo export https_proxy="socks5://$(hostname -s):12345"
+export http_proxy="socks5://${HOSTNAME}:12345"
+export https_proxy="socks5://${HOSTNAME}:12345"
 ```
 ```python!
 import os
