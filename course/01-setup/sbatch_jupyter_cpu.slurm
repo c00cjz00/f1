@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --account=GOV113077           # (-A) iService Project ID
+#SBATCH --account=MST113173           # (-A) iService Project ID
 #SBATCH --job-name=sleep              # (-J) Job name
 #SBATCH --partition=ct112             # (-p) Slurm partition
 #SBATCH --nodes=1                     # (-N) Maximum number of nodes to be allocated
-#SBATCH --cpus-per-task=2             # (-c) Number of cores per MPI task
+#SBATCH --cpus-per-task=8             # (-c) Number of cores per MPI task
 #SBATCH --ntasks-per-node=1           # Maximum number of tasks on each node
 ##SBATCH --time=4-00:00:00            # (-t) Wall time limit (days-hrs:min:sec)
 #SBATCH --output=job-%j.out           # (-o) Path to the standard output file
