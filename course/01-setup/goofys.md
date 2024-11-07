@@ -11,6 +11,7 @@ export https_proxy="socks5://${HOSTNAME}:12345"
 ```
 curl -sL https://github.com/kahing/goofys/releases/latest/download/goofys > ~/goofys
 chmod 755 ~/goofys
+```
 
 ### 2. 建立帳號密碼
 
