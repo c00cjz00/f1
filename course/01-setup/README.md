@@ -107,20 +107,27 @@ export http_proxy="socks5://${HOSTNAME}:12345"
 export https_proxy="socks5://${HOSTNAME}:12345"
 ```
 
-5. SQUID 環境變數 (模式三, intgpn02 )
-
-```bash!
-export http_proxy="http://intgpn02:53128"
-export https_proxy="http://intgpn02:53128"
-```
-
-6. jupyter 設定
+5. jupyter 設定(模式一二)
 ```python!
 import os
 tmp=!echo $(hostname)
 HOSTNAME=tmp[0]
 os.environ['http_proxy'] = "socks5:/"+HOSTNAME+":12345" 
 os.environ['https_proxy'] = "socks5://"+HOSTNAME+":12345" 
+```
+
+6. SQUID 環境變數 (模式三, intgpn02 )
+
+```bash!
+export http_proxy="http://intgpn02:53128"
+export https_proxy="http://intgpn02:53128"
+```
+
+7. jupyter 設定(模式三)
+```python!
+import os
+os.environ['http_proxy'] = "http://intgpn02:53128" 
+os.environ['https_proxy'] = "http://intgpn02:53128" 
 ```
 
 ### singularity image ipykernel (Image內建python)
