@@ -15,8 +15,8 @@ ssh -fND ${HOSTNAME}:12345 intgpn01
 ```
 ## Bash 環境變數 (12345請同步更動為上述的隨機數字)
 ```
-export http_proxy="socks5://${HOSTNAME}:12345"
-export https_proxy="socks5://${HOSTNAME}:12345"
+export http_proxy="socks5://${HOSTNAME}:12345
+export https_proxy="socks5://${HOSTNAME}:12345
 ```
 
 ## SQUID
