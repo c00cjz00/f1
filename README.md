@@ -28,7 +28,9 @@
 - (3) 啟動 Rstudio https://man.twcc.ai/@f1-manual/RStudio_resource
 - (4) Rstudio Example https://man.twcc.ai/MGFOoWjWRbGGipcCTfNlnw
 - (5) 啟動 Jupyter notebook https://man.twcc.ai/@f1-manual/App_Jupyter_Lab 
-
+- 補充
+  - https://github.com/c00cjz00/f1/blob/main/course/01-setup/README.md
+  - https://github.com/c00cjz00/f1/blob/main/course/01-setup/sbatch_jupyter_cpu.slurm
 
 ## 操作 Modules
 ### 基本說明 
