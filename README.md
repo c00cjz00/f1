@@ -1,8 +1,8 @@
 # F1
 ## F1 手冊
 - https://man.twcc.ai/@f1-manual/manual
+
 ## 服務簡介
-- https://man.twcc.ai/@f1-manual/manual
 ### 系統架構與計算資源
 - https://man.twcc.ai/@f1-manual/architecture
 ### 儲存資源與目錄位置
