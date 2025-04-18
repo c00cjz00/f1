@@ -106,6 +106,15 @@ ssh -fND ${HOSTNAME}:12345 intgpn01
 export http_proxy="socks5://${HOSTNAME}:12345"
 export https_proxy="socks5://${HOSTNAME}:12345"
 ```
+
+5. SQUID 環境變數 (模式三, intgpn02 )
+
+```bash!
+export http_proxy="http://intgpn02:53128"
+export https_proxy="http://intgpn02:53128"
+```
+
+6. jupyter 設定
 ```python!
 import os
 tmp=!echo $(hostname)
