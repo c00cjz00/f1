@@ -18,6 +18,13 @@ ssh -fND ${HOSTNAME}:12345 intgpn01
 export http_proxy="socks5://${HOSTNAME}:12345"
 export https_proxy="socks5://${HOSTNAME}:12345"
 ```
+
+## SQUID
+```
+export http_proxy="http://intgpn02:53128"
+export https_proxy="http://intgpn02:53128"
+```
+
 ## Python 環境變數
 ```
 import os
